@@ -86,11 +86,11 @@ class MPT():
                 dets = dets[sc[:,0] > self.detection_threshold]
 
                 # if nothing detected do not update the tracker
-                if dets.shape[0] > 0:
-                    track_bbs_ids = self.tracker.update(dets)
-                else:
-                    track_bbs_ids = np.empty((0, 5))
-                trackers.append(track_bbs_ids)
+                # if dets.shape[0] > 0:
+                #     track_bbs_ids = self.tracker.update(dets)
+                # else:
+                #     track_bbs_ids = np.empty((0, 5))
+                # trackers.append(track_bbs_ids)
 
         runtime = time.time() - start
         fps = len(dataloader.dataset) / runtime
