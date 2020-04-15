@@ -81,6 +81,7 @@ class MPT():
                 print("prediction:", pred)
                 bb = pred['boxes'].cpu().numpy()
                 sc = pred['scores'].cpu().numpy()[..., None]
+                print("bb:", bb)
                 dets = np.hstack([bb,sc])
                 dets = dets[sc[:,0] > self.detection_threshold]
 
