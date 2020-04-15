@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="multi_person_tracker",
+    name="person_tracker",
     version="0.1",
     author="Muhammed Kocabas",
     description="Multi Person Tracker",
